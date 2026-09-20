@@ -33,6 +33,38 @@ KuudereOS — операционная система на базе дистри
 
 Скачай ISO из раздела **Releases**.
 
+## Скриншоты
+
+### Рабочий стол
+![Рабочий стол](screenshots/desktop.png)
+
+### KuudereFetch
+![KuudereFetch](screenshots/kuuderefetch.png)
+
+### Control Center
+![Control Center](screenshots/controlcenter.png)
+
+### KuudereVersion
+![KuudereVersion](screenshots/kuudereversion.png)
+
+### KuudereStore
+![KuudereStore](screenshots/kuuderestore.png)
+
+### QuickRun
+![QuickRun](screenshots/quickrun.png)
+
+### KuudereNotes
+![KuudereNotes](screenshots/kuuderenotes.png)
+
+### KuudereEdit
+![KuudereEdit](screenshots/kuudereedit.png)
+
+### NotifyMe
+![NotifyMe](screenshots/notifyme.png)
+
+### AutoBash
+![AutoBash](screenshots/autobash.png)
+
 ## Лицензия
 
 GPL-3.0

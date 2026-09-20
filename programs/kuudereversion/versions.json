@@ -1,0 +1,33 @@
+{
+  "light": {
+    "name": "KuudereOS Light",
+    "desc": "Облегчённая версия для слабых ПК",
+    "remove": "libreoffice* thunderbird rhythmbox totem",
+    "install": "xfce4 xfce4-goodies lightdm"
+  },
+  "dev": {
+    "name": "KuudereOS Dev",
+    "desc": "Для разработчиков",
+    "install": "build-essential gcc g++ python3 python3-pip nodejs npm git docker.io code"
+  },
+  "design": {
+    "name": "KuudereOS Design",
+    "desc": "Для дизайнеров и художников",
+    "install": "gimp inkscape krita"
+  },
+  "music": {
+    "name": "KuudereOS Music",
+    "desc": "Для музыкантов",
+    "install": "lmms ardour audacity"
+  },
+  "3d": {
+    "name": "KuudereOS 3D",
+    "desc": "Для создателей 3D-моделей",
+    "install": "blender freecad"
+  },
+  "studio": {
+    "name": "KuudereOS Studio",
+    "desc": "Design + Music + 3D в одном",
+    "install": "gimp inkscape krita blender lmms ardour audacity freecad"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "Браузеры": [
+    {"name": "Firefox", "pkg": "firefox", "desc": "Быстрый и приватный браузер"},
+    {"name": "Chromium", "pkg": "chromium", "desc": "Открытый браузер от Google"},
+    {"name": "Brave", "pkg": "brave-browser", "desc": "Приватный браузер с блокировкой рекламы"}
+  ],
+  "Офис": [
+    {"name": "LibreOffice", "pkg": "libreoffice", "desc": "Полный офисный пакет"},
+    {"name": "OnlyOffice", "pkg": "onlyoffice-desktopeditors", "desc": "Совместим с MS Office"},
+    {"name": "AbiWord", "pkg": "abiword", "desc": "Лёгкий текстовый редактор"}
+  ],
+  "Мультимедиа": [
+    {"name": "VLC", "pkg": "vlc", "desc": "Воспроизводит всё"},
+    {"name": "Audacity", "pkg": "audacity", "desc": "Редактор звука"},
+    {"name": "GIMP", "pkg": "gimp", "desc": "Редактор изображений"},
+    {"name": "Inkscape", "pkg": "inkscape", "desc": "Векторный редактор"},
+    {"name": "Krita", "pkg": "krita", "desc": "Рисование и живопись"}
+  ],
+  "Разработка": [
+    {"name": "VS Code", "pkg": "code", "desc": "Редактор кода от Microsoft"},
+    {"name": "Git", "pkg": "git", "desc": "Система контроля версий"},
+    {"name": "Python 3", "pkg": "python3", "desc": "Язык программирования"},
+    {"name": "Node.js", "pkg": "nodejs", "desc": "JavaScript на сервере"},
+    {"name": "Docker", "pkg": "docker.io", "desc": "Контейнеры"}
+  ],
+  "Игры": [
+    {"name": "Steam", "pkg": "steam", "desc": "Игровая платформа"},
+    {"name": "SuperTuxKart", "pkg": "supertuxkart", "desc": "Гонки с пингвинами"},
+    {"name": "0 A.D.", "pkg": "0ad", "desc": "Стратегия в реальном времени"}
+  ],
+  "Утилиты": [
+    {"name": "GParted", "pkg": "gparted", "desc": "Редактор разделов"},
+    {"name": "htop", "pkg": "htop", "desc": "Монитор процессов"},
+    {"name": "Neofetch", "pkg": "neofetch", "desc": "Информация о системе"},
+    {"name": "Timeshift", "pkg": "timeshift", "desc": "Резервные копии"}
+  ]
+}

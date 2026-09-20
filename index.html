@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KuudereOS — операционная система</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Monospace', 'Courier New', monospace;
+    background: linear-gradient(180deg, #ffffff 0%, #1a1a2e 40%, #0f0f1e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 40px; }
+  h1 {
+    font-size: 2.5em;
+    color: #0f0f1e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .version { color: #7f8fa6; font-size: 0.9em; }
+  h2 {
+    color: #7fb3ff;
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #16213e;
+    padding-bottom: 5px;
+  }
+  p { margin-bottom: 15px; color: #e0e0e0; }
+  .card {
+    background: #16213e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+  }
+  .card h3 { color: #7fb3ff; margin-bottom: 10px; }
+  .card p { color: #a8c8ff; font-size: 0.9em; margin-bottom: 10px; }
+  code {
+    display: block;
+    background: #0f0f1e;
+    color: #a8c8ff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    overflow-x: auto;
+    margin: 10px 0;
+    word-break: break-all;
+  }
+  button {
+    background: #7fb3ff;
+    color: #0f0f1e;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover { background: #a8c8ff; }
+  a {
+    color: #7fb3ff;
+    text-decoration: none;
+    border-bottom: 1px dotted #7fb3ff;
+  }
+  a:hover { color: #a8c8ff; }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #16213e;
+    color: #7f8fa6;
+    font-size: 0.85em;
+  }
+  .warning {
+    background: #2a1a1a;
+    border-left: 3px solid #ff6b6b;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 0.85em;
+    color: #ffaaaa;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>kuudereOS</h1>
+    <p class="version">Beta 1 «Chito» — на базе Linux Mint</p>
+  </header>
+
+  <section>
+    <h2>📖 О системе</h2>
+    <p>KuudereOS — операционная система на базе дистрибутива <strong>Linux Mint</strong>. Создана для облегчения и автоматизации использования ОС.</p>
+    <p><strong>Философия:</strong> Один ISO. Всё остальное — командами. Как Arch, но просто.</p>
+  </section>
+
+  <section>
+    <h2>⬇ Скачать</h2>
+    <div class="card">
+      <h3>KuudereOS Stable</h3>
+      <p>Базовая система с дополнительным софтом.</p>
+      <a href="https://github.com/pyatietashka/kuudereos/releases"><button>Скачать с GitHub</button></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎨 Версии</h2>
+    <p>Все команды можно изменить — просто составьте свой список нужных и ненужных приложений.</p>
+
+    <div class="card">
+      <h3>KuudereOS Light</h3>
+      <p>Облегчённая версия для слабых ПК.</p>
+      <p><strong>1. Удаление лишних программ:</strong></p>
+      <code id="light-remove">sudo apt remove libreoffice* thunderbird rhythmbox totem && sudo apt autoremove -y</code>
+      <button onclick="copy('light-remove')">Скопировать</button>
+      <p style="margin-top:15px;"><strong>2. Установка лёгкого интерфейса:</strong></p>
+      <code id="light-xfce">sudo apt install xfce4 xfce4-goodies lightdm</code>
+      <button onclick="copy('light-xfce')">Скопировать</button>
+    </div>
+
+    <div class="card">
+      <h3>KuudereOS Dev</h3>
+      <p>Для разработчиков.</p>
+      <code id="dev">sudo apt install build-essential gcc g++ python3 python3-pip nodejs npm git docker.io code</code>
+      <button onclick="copy('dev')">Скопировать</button>
+    </div>
+
+    <div class="card">
+      <h3>KuudereOS Design</h3>
+      <p>Для дизайнеров и художников.</p>
+      <code id="design">sudo apt install gimp inkscape krita</code>
+      <button onclick="copy('design')">Скопировать</button>
+    </div>
+
+    <div class="card">
+      <h3>KuudereOS Music</h3>
+      <p>Для музыкантов.</p>
+      <code id="music">sudo apt install lmms ardour audacity</code>
+      <button onclick="copy('music')">Скопировать</button>
+    </div>
+
+    <div class="card">
+      <h3>KuudereOS 3D</h3>
+      <p>Для создателей 3D-моделей.</p>
+      <code id="3d">sudo apt install blender freecad</code>
+      <button onclick="copy('3d')">Скопировать</button>
+    </div>
+
+    <div class="card">
+      <h3>KuudereOS Studio</h3>
+      <p>Design + Music + 3D в одном.</p>
+      <code id="studio">sudo apt install gimp inkscape krita blender lmms ardour audacity freecad</code>
+      <button onclick="copy('studio')">Скопировать</button>
+    </div>
+
+    <div class="warning">
+      ⚠️ Команды выполняются в терминале. Перед запуском убедитесь, что вы понимаете, что они делают.
+    </div>
+  </section>
+
+  <section>
+    <h2>🖼 Скриншоты</h2>
+    <p>Посмотреть скриншоты можно в <a href="https://github.com/pyatietashka/kuudereos#скриншоты">README на GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>KuudereOS © 2026 pyatietashka · <a href="https://github.com/pyatietashka/kuudereos">GitHub</a></p>
+    <p>Лицензия GPL-3.0</p>
+  </footer>
+
+</div>
+
+<script>
+function copy(id) {
+  const el = document.getElementById(id);
+  navigator.clipboard.writeText(el.textContent).then(() => {
+    const btn = el.nextElementSibling;
+    const old = btn.textContent;
+    btn.textContent = '✓ Скопировано!';
+    setTimeout(() => { btn.textContent = old; }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>

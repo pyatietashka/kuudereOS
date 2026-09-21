@@ -14,7 +14,7 @@
     line-height: 1.6;
   }
   .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-  header { text-align: center; margin-bottom: 40px; }
+  header { text-align: center; margin-bottom: 30px; }
   h1 {
     font-size: 2.5em;
     color: #0f0f1e;
@@ -22,6 +22,20 @@
     letter-spacing: 2px;
   }
   .version { color: #7f8fa6; font-size: 0.9em; }
+  nav {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #16213e;
+    margin-bottom: 30px;
+  }
+  nav a {
+    color: #7fb3ff;
+    margin: 0 15px;
+    font-size: 0.95em;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  nav a:hover { color: #a8c8ff; border-bottom: 1px dotted #a8c8ff; }
   h2 {
     color: #7fb3ff;
     margin: 30px 0 15px;
@@ -89,8 +103,15 @@
 
   <header>
     <h1>kuudereOS</h1>
-    <p class="version">Beta 1 «Chito» — на базе Linux Mint</p>
+    <p class="version">Beta 2 «Kaoru» — на базе Linux Mint</p>
   </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="beginners.html">Для начинающих</a>
+    <a href="changelog.html">Апдейтлог</a>
+    <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a>
+  </nav>
 
   <section>
     <h2>📖 О системе</h2>
@@ -101,9 +122,9 @@
   <section>
     <h2>⬇ Скачать</h2>
     <div class="card">
-      <h3>KuudereOS Stable</h3>
+      <h3>KuudereOS Beta 2 «Kaoru»</h3>
       <p>Базовая система с дополнительным софтом.</p>
-      <a href="https://archive.org/details/kuudereos"><button>Скачать с Archive</button></a>
+      <a href="https://archive.org/details/kuudereos"><button>Скачать с Archive.org</button></a>
     </div>
   </section>
 
@@ -164,11 +185,11 @@
 
   <section>
     <h2>🖼 Скриншоты</h2>
-    <p>Посмотреть скриншоты можно в <a href="https://github.com/pyatietashka/kuudereos#скриншоты">README на GitHub</a>.</p>
+    <p>Посмотреть скриншоты можно в <a href="https://github.com/pyatietashka/kuudereOS#скриншоты">README на GitHub</a>.</p>
   </section>
 
   <footer>
-    <p>KuudereOS © 2026 pyatietashka · <a href="https://github.com/pyatietashka/kuudereos">GitHub</a></p>
+    <p>KuudereOS © 2026 pyatietashka · <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a></p>
     <p>Лицензия GPL-3.0</p>
   </footer>
 

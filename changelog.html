@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Апдейтлог — KuudereOS</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Monospace', 'Courier New', monospace;
+    background: linear-gradient(180deg, #ffffff 0%, #1a1a2e 40%, #0f0f1e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 30px; }
+  h1 {
+    font-size: 2.5em;
+    color: #0f0f1e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  nav {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #16213e;
+    margin-bottom: 30px;
+  }
+  nav a {
+    color: #7fb3ff;
+    margin: 0 15px;
+    font-size: 0.95em;
+    text-decoration: none;
+  }
+  nav a:hover { color: #a8c8ff; }
+  h2 {
+    color: #7fb3ff;
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #16213e;
+    padding-bottom: 5px;
+  }
+  .version {
+    background: #16213e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+  }
+  .version h3 { color: #7fb3ff; margin-bottom: 10px; }
+  .version .date { color: #7f8fa6; font-size: 0.85em; margin-bottom: 10px; }
+  .version ul { margin-left: 25px; }
+  .version li { margin-bottom: 5px; }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #16213e;
+    color: #7f8fa6;
+    font-size: 0.85em;
+  }
+  a { color: #7fb3ff; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>kuudereOS</h1>
+    <p style="color:#7f8fa6;">Апдейтлог</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="beginners.html">Для начинающих</a>
+    <a href="changelog.html">Апдейтлог</a>
+    <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a>
+  </nav>
+
+  <div class="version">
+    <h3>Beta 2 «Kaoru»</h3>
+    <p class="date">21 сентября 2026</p>
+    <ul>
+      <li>🔄 Смена способа сборки: Penguin's Eggs → Cubic</li>
+      <li>🎨 Новые обои с Каору Тоно</li>
+      <li>📦 Исправлена проблема с пакетами в live-режиме</li>
+      <li>🏷 Новый тэг UN (Update Name) — финальное название</li>
+      <li>📝 Папка «Обои» на рабочем столе</li>
+      <li>🎮 SuperTuxKart в KuudereStore</li>
+    </ul>
+  </div>
+
+  <div class="version">
+    <h3>Beta 1 «Chito»</h3>
+    <p class="date">20 сентября 2026</p>
+    <ul>
+      <li>🎉 Первый релиз KuudereOS</li>
+      <li>🐧 На базе Linux Mint 22.3</li>
+      <li>📦 10 программ: AutoBash, QuickRun, KuudereFetch, KuudereNotes, NotifyMe, KuudereEdit, KuudereStore, KuudereVersion, Control Center</li>
+      <li>🎨 Обои с Тито из «Девушки в последнем путешествии»</li>
+      <li>🏷 Тэг TUN (Test Update Name) — тестовое название</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>KuudereOS © 2026 pyatietashka · <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a></p>
+    <p>Лицензия GPL-3.0</p>
+  </footer>
+
+</div>
+</body>
+</html>

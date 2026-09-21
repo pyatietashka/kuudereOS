@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для начинающих — KuudereOS</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Monospace', 'Courier New', monospace;
+    background: linear-gradient(180deg, #ffffff 0%, #1a1a2e 40%, #0f0f1e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  header { text-align: center; margin-bottom: 30px; }
+  h1 {
+    font-size: 2.5em;
+    color: #0f0f1e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  nav {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #16213e;
+    margin-bottom: 30px;
+  }
+  nav a {
+    color: #7fb3ff;
+    margin: 0 15px;
+    font-size: 0.95em;
+    text-decoration: none;
+  }
+  nav a:hover { color: #a8c8ff; }
+  h2 {
+    color: #7fb3ff;
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #16213e;
+    padding-bottom: 5px;
+  }
+  h3 { color: #a8c8ff; margin: 20px 0 10px; }
+  p { margin-bottom: 15px; }
+  ul { margin-left: 25px; margin-bottom: 15px; }
+  li { margin-bottom: 5px; }
+  code {
+    display: inline-block;
+    background: #0f0f1e;
+    color: #a8c8ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: #0f0f1e;
+    color: #a8c8ff;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+  .card {
+    background: #16213e;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #16213e;
+    color: #7f8fa6;
+    font-size: 0.85em;
+  }
+  a { color: #7fb3ff; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>kuudereOS</h1>
+    <p style="color:#7f8fa6;">Для начинающих</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="beginners.html">Для начинающих</a>
+    <a href="changelog.html">Апдейтлог</a>
+    <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a>
+  </nav>
+
+  <h2>📖 Что такое Linux?</h2>
+  <p><strong>Linux</strong> — это операционная система, как Windows или macOS. Но:
+  <ul>
+    <li><strong>Бесплатная</strong> — не надо покупать лицензию.</li>
+    <li><strong>Открытая</strong> — код можно смотреть и менять.</li>
+    <li><strong>Безопасная</strong> — меньше вирусов.</li>
+    <li><strong>Гибкая</strong> — можно настроить как угодно.</li>
+  </ul>
+
+  <h2>🐧 Что такое Linux Mint?</h2>
+  <p><strong>Linux Mint</strong> — это дистрибутив Linux. Проще говоря, <em>версия</em> Linux, которая:
+  <ul>
+    <li>Удобна для <strong>новичков</strong>.</li>
+    <li>Похожа на <strong>Windows</strong>.</li>
+    <li>Работает <strong>быстро</strong>.</li>
+    <li>Имеет <strong>много</strong> программ.</li>
+  </ul>
+  <p>KuudereOS <strong>основана</strong> на Linux Mint 22.3.</p>
+
+  <h2>❄ Что такое KuudereOS?</h2>
+  <p><strong>KuudereOS</strong> — это <strong>наша</strong> операционная система на базе Linux Mint.
+  <p><strong>Философия:</strong> «Один ISO. Всё остальное — командами. Как Arch, но просто.»</p>
+  <p>Что <strong>есть</strong> в KuudereOS:
+  <ul>
+    <li><strong>KuudereStore</strong> — магазин приложений.</li>
+    <li><strong>KuudereVersion</strong> — установка версий (Dev, Design, Music).</li>
+    <li><strong>KuudereFetch</strong> — информация о системе.</li>
+    <li><strong>KuudereNotes</strong> — заметки.</li>
+    <li><strong>KuudereEdit</strong> — редактор.</li>
+    <li><strong>Control Center</strong> — центр управления.</li>
+    <li><strong>QuickRun</strong> — быстрый запуск (как Win+R).</li>
+    <li><strong>NotifyMe</strong> — уведомления.</li>
+    <li><strong>AutoBash</strong> — автозапуск команд.</li>
+  </ul>
+
+  <h2>💻 Основные команды</h2>
+  <p>Открой <strong>терминал</strong>: <code>Ctrl + Alt + T</code></p>
+
+  <h3>Работа с файлами</h3>
+  <pre>ls              — показать файлы в папке
+cd ~/Документы  — перейти в папку
+mkdir Новая     — создать папку
+rm файл.txt     — удалить файл
+cp файл1 файл2  — скопировать</pre>
+
+  <h3>Установка программ</h3>
+  <pre>sudo apt update              — обновить список
+sudo apt install firefox     — установить
+sudo apt remove firefox      — удалить
+sudo apt search браузер      — найти</pre>
+
+  <h3>Наши программы</h3>
+  <pre>kuuderefetch         — информация о системе
+kuuderestore         — магазин приложений
+kuudereversion       — установка версий
+kuuderenotes         — заметки
+kuudereedit          — редактор
+kuuderecontrol       — центр управления
+notifyme "sleep 5"   — уведомление</pre>
+
+  <h3>Как поставить обои</h3>
+  <pre>1. Открой папку "Обои" на рабочем столе
+2. Правой кнопкой по обоям
+3. "Сделать фоном рабочего стола"</pre>
+
+  <h2>🎨 Версии KuudereOS</h2>
+  <div class="card">
+    <h3>KuudereOS Light</h3>
+    <p>Облегчённая версия для слабых ПК.</p>
+    <pre>sudo apt install xfce4 xfce4-goodies lightdm</pre>
+  </div>
+  <div class="card">
+    <h3>KuudereOS Dev</h3>
+    <p>Для разработчиков.</p>
+    <pre>sudo apt install build-essential python3 git docker.io code</pre>
+  </div>
+  <div class="card">
+    <h3>KuudereOS Design</h3>
+    <p>Для дизайнеров.</p>
+    <pre>sudo apt install gimp inkscape krita</pre>
+  </div>
+  <div class="card">
+    <h3>KuudereOS Music</h3>
+    <p>Для музыкантов.</p>
+    <pre>sudo apt install lmms ardour audacity</pre>
+  </div>
+
+  <h2>🆘 Помощь</h2>
+  <p>Если что-то <strong>не работает</strong>:
+  <ul>
+    <li>Проверь, что ты на <strong>KuudereOS</strong>: <code>cat /etc/os-release</code></li>
+    <li>Обнови систему: <code>sudo apt update</code></li>
+    <li>Напиши нам: <a href="https://github.com/pyatietashka/kuudereOS/issues">GitHub Issues</a></li>
+  </ul>
+
+  <footer>
+    <p>KuudereOS © 2026 pyatietashka · <a href="https://github.com/pyatietashka/kuudereOS">GitHub</a></p>
+    <p>Лицензия GPL-3.0</p>
+  </footer>
+
+</div>
+</body>
+</html>
